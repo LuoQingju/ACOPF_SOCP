@@ -3,7 +3,7 @@ Solving the Optimal Power Flow by Second-Order Cone Programming (The Second-Orde
 Radial Distribution Network
 The bus shunt admittance, line charging susceptance, transformer ratio and phase shift are not considered.
 
-Dependency libraries: yalmip, gurobi, matpower
+Dependency libraries: matlab-R2023b, yalmip-R20230622, gurobi10.0.1, matpower7.1
 
 Author: Qingju Luo
 Email: luoqingju@qq.com
@@ -22,7 +22,7 @@ For learning and communication only!!!
 径向配电网
 不考虑节点并联导纳、线路充电电纳、变压器变比和相移。
 
-依赖库：yalmip, gurobi, matpower
+依赖库：matlab-R2023b, yalmip-R20230622, gurobi10.0.1, matpower7.1
 
 作者：罗清局
 邮箱：luoqingju@qq.com
