@@ -112,7 +112,7 @@ con = con + [Pmin <= Pg <= Pmax];
 con = con + [Qmin <= Qg <= Qmax];
 
 if ~isempty(il)
-    con = con + cone([flow_max'; [Pl'; Ql']]); % flow limit
+    con = con + cone([flow_max'; [Pl(il)'; Ql(il)']]); % flow limit
     % Pl^2 + Ql^2 <= flow_max^2
 end
 
@@ -172,3 +172,4 @@ fprintf(['\nThe error of the real power output is:', num2str(norm(Pg_res-Pg)), '
 fprintf(['\nThe error of the reactive power output is:', num2str(norm(Qg_res-Qg)), '\n'])
 fprintf(['\nThe error of the square of bus voltage magnitude is:', num2str(norm(Vm2_res-Vm2)), '\n'])
 fprintf(['\nThe error of the square of branch current magnitude is:', num2str(norm(Im2_res-Im2)), '\n'])
+
